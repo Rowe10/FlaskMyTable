@@ -1,0 +1,4 @@
+- Flask application is an instance of the Flask class
+- - config amd URLs will be registered with this class
+
+A function called applciation factory will handle all the set up for the application

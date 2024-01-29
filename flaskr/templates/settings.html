@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/settingsStyle.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script type="text/javascript" src="{{ url_for('static', filename= 'java/app.js') }}"></script>
+</head>
+<body>
+    {% extends 'base.html' %}
+
+    {% block content %}
+
+    <br />
+
+    <div class="wrapper-main">
+
+        <form method="POST" name="personalInfo" action="/settings">
+            <tx>Personal Details:      </tx>
+            <button type="submit" class="btn btn-primary"> <i class="bi bi-pencil-square"></i> </button>
+            <br />
+            <br />
+    
+            <div class="SettingsForm">
+                <label for="name">Name:</label>
+                <input type="text" placeholder="..." name="Name" />
+                <br />
+    
+                <label for="Bank">Bank Name:</label>
+                <input type="text" placeholder="..." name="Bank" />
+                <br />
+    
+               
+                <div class="accNum"> <label for="Account Number">Account Number:</label>
+                <input type="text" placeholder="..." name="Account Number" />
+                </div>
+                <br />
+    
+                <label for="Sort Code">Sort Code:</label>
+                <input type="text" placeholder="..." name="Sort Code" />
+                <br />
+                <br />
+
+                <label for="Hourly Rate">Hourly Rate:</label>
+                <input type="text" placeholder="..." name="Hourly Rate" />
+                <br />
+    
+                <label for="Monthly Goal">Monthly Goal:</label>
+                <input type="text" placeholder="..." name="Monthly Goal" />
+                <br />
+            </div>
+    
+        </form>
+
+<br>
+<br>
+<br>
+
+        <form method="POST" name="companyInput">
+            <tx>Client Details:</tx>
+            
+            <br />
+            <br />
+    
+            <div class="ClientForm">
+
+                    
+                <bord><input type="text" placeholder="..." name="Name" /></bord>
+                <bord><label for="HoursAgreed">Hours Agreed:</label></bord>
+    
+
+                <bord><input type="text" placeholder="..." name="HoursAgreed" /></bord>
+                <companyTools><button type="submit" class="btn btn-primary"> <i class="bi bi-pencil-square"></i> </button> <button type="submit" class="btn btn-primary"><i class="bi bi-trash3-fill"></i> </button></companyTools>
+
+                
+
+            </div>
+    
+        </form>
+
+        <form method="POST" name="companyInput">
+            
+            <br />
+            <br />
+    
+            <div class="ClientForm">
+
+                    
+                <bord><input type="text" placeholder="Null" name="Name" /></bord>
+                <bord><label for="HoursAgreed">Hours Agreed:</label></bord>
+    
+
+                <bord><input type="text" placeholder="Null" name="HoursAgreed" /></bord>
+                <companyTools><button type="submit" class="btn btn-primary"> <i class="bi bi-plus-lg"></i> </button></companyTools>
+
+            </div>
+    
+        </form>
+
+
+    </div>
+    
+   
+ 
+    {% endblock %}
+</body>
+

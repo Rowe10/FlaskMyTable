@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/mainStyle.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    {% extends 'base.html' %}
+
+    {% block content %}
+
+    <table class="TimeTable">
+        <tr class="Header">
+            <th class="Cell">Time</th>
+            <th class="Cell">Monday</th>
+            <th class="Cell">Tuesday</th>
+            <th class="Cell">Wednesday</th>
+            <th class="Cell">Thursday</th>
+            <th class="Cell">Friday</th>
+            <th class="Cell">Saturday</th>
+            <th class="Cell">Sunday</th>
+        </tr>
+        <tr class="Row">
+            <td class="Cell">9 am</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Call</td>
+            <td class="Cell">Meet the Web Design Team</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Review</td>
+        </tr>    
+        <tr class="Row">
+            <td class="Cell">10 am</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Finalise Agreement</td>
+            <td class="Cell">Open Webinar</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Call Sarah</td>
+        </tr>    
+        <tr class="Row">
+            <td class="Cell">11 am</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Review Craig's Design</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Sarah</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Open</td>
+        </tr>    
+        <tr class="Row">
+            <td class="Cell">12 pm</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Meet Analysts</td>
+            <td class="Cell">Call</td>
+            <td class="Cell">Work Review</td>
+            <td class="Cell">Greet New Clients</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Host Open Discussion</td>
+        </tr>    
+        <tr class="Row">
+            <td class="Cell">1 pm</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Call</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Call Mark</td>
+        </tr>    
+        <tr class="Row">
+            <td class="Cell">2 pm</td>
+            <td class="Cell">Final Meeting W/ Design Team</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Open</td>
+        </tr>    
+        <tr class="Row">
+            <td class="Cell">3 pm</td>
+            <td class="Cell">Calendar Review</td>
+            <td class="Cell">Call</td>
+            <td class="Cell">Call w/ Investors</td>
+            <td class="Cell">Call w/ Investors</td>
+            <td class="Cell">Call w/ Investors</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Dentist</td>
+        </tr>    
+        <tr class="Row">
+            <td class="Cell">4 pmm</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Call</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Call w/ Investors</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Call Mark</td>
+        </tr>    
+        <tr class="Row">
+            <td class="Cell">5 pm</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Call</td>
+            <td class="Cell">Open</td>
+            <td class="Cell">Software Launch</td>
+            <td class="Cell">open</td>
+            <td class="Cell">Meeting</td>
+            <td class="Cell">Meeting</td>
+        </tr>    
+    </table>
+
+    <form class="timer">
+        <div class="Base">
+
+            <input type="text" placeholder="..." name="Title" />
+            <select name="clientDrop">
+                <option value="one">Santander</option>
+                <option value="two">Netflix</option>
+                <option value="three">Ocado</option>
+
+            </select>
+            <input type="text" placeholder="00:00:00" name="Timer" />
+            <button type="text" name="action"><i class="bi bi-play-fill"></i></button>  
+            <button type="text" name="add"><i class="bi bi-plus-lg"></i></button>
+        
+
+
+        </div>
+
+
+
+    </form>
+    <br><br><br><br>
+    <div class="history">
+        <div class="BaseTwo">
+
+            <input type="text" placeholder="..." name="Title" />
+            <select name="clientDrop">
+                <option value="one">Santander</option>
+                <option value="two">Netflix</option>
+                <option value="three">Ocado</option>
+
+            </select>
+            <input type="text" placeholder="00:00:00" name="Timer" />
+            <button type="text" name="action"><i class="bi bi-pencil-square"></i></button>  
+            <button type="text" name="add"><i class="bi bi-trash3-fill"></i></button>
+
+
+            
+        
+
+
+        </div>
+        <br>
+        <div class="BaseTwo">
+
+            <input type="text" placeholder="..." name="Title" />
+            <select name="clientDrop">
+                <option value="one">Santander</option>
+                <option value="two">Netflix</option>
+                <option value="three">Ocado</option>
+
+            </select>
+            <input type="text" placeholder="00:00:00" name="Timer" />
+            <button type="text" name="action"><i class="bi bi-pencil-square"></i></button>  
+            <button type="text" name="add"><i class="bi bi-trash3-fill"></i></button>
+
+
+            
+        
+
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+    {% endblock %}
+</body>
+</html>
+
+
+
+
+
+
+

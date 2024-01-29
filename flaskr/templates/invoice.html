@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/settingsStyle.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    {% extends 'base.html' %}
+
+    {% block content %}
+
+    <div class="wrapper-main">
+
+        <form method="POST" name="personalInfo" action="/settings">
+            <tx>Invoice Validation:      </tx>
+            
+            <br />
+            <br />
+    
+            <div class="SettingsForm">
+                Invoice Date: 1 August 2020 <br>
+                Invoice Number: 23<br>
+                <br>
+                Freelance Strategy Service for Design Studio<br>
+                <br>
+                Total: <br>
+                £256.00<br>
+                <br>
+                Payment:<br>
+                Tom Rowe<br>
+                Happy Bank, acc: 1238762378<br>
+                Sort: 223-82-93<br>
+                <br>
+                Please Pay Within 20 days<br>
+                <br>
+                Timesheets:<br>
+                <br>
+                27 July £91 - 9 hours 05 minutes - Projects: Netflix<br>
+                24 July £45 - 4 hours 12 minutes - Projects: Netflix; Santander<br>
+                23  July £64 - 6 hours 24 minutes - Projects: Santander; <br>
+                12 July £58 - 7 hours 0 minutes - Projects: Amazon; Netflix<br>
+                13 July £92 - 5 hours 45minutes - Projects: Amazon<br>
+
+                
+        </form>
+        <move><button type="submit" class="btn btn-primary"> <i class="bi bi-arrow-up"></i></i> </button></move> 
+    {% endblock %}
+
+
+</body>
+

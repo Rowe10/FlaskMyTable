@@ -1,0 +1,53 @@
+.SettingsForm {
+    font-size: 4em;
+    font-family: "Poppins", sans-serif;
+    border: solid;
+    border-radius: 25px;
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+.ClientForm {
+    font-size: 4em;
+    font-family: "Poppins", sans-serif;
+    border: solid;
+    border-radius: 25px;
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+
+
+bord {
+    padding: 10px;
+    border: solid;
+    border-radius: 25px;
+    background-clip: padding-box; 
+    background: #DDDDDD;
+}
+
+input {
+    border: none;
+    background: transparent;
+    font-size: 1em;
+    font-family: "Poppins", sans-serif;
+    width: 9em;
+}
+
+companyTools {
+
+    position: relative;
+    Left: 20px;
+    width: 1px;
+
+
+}
+
+
+move {
+    font-size: 50px;
+    position: relative;
+    Left: 2000px;
+    bottom: 1400;
+
+}

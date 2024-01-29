@@ -1,0 +1,57 @@
+body {
+    background: #D9D9D9
+}
+.wrapper-main{
+    position: absolute;
+    top: 40px;
+    right: 1000px;
+    width: 2000px;
+    margin: auto;
+}
+
+
+h1 {   
+    color: black;
+    padding: 4px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+tx {
+    color: black;
+    padding: 4px;
+    font-family: "Poppins", sans-serif;
+    font-size: 100px;
+}
+
+.iconsContainer {
+    display: flex;
+    cursor: pointer;
+    font-size: 150px;
+}
+
+a {
+
+    color: black;
+
+}
+
+a:hover {
+    color: forestgreen;
+
+}
+
+
+button {
+    color: white;
+    border: none;
+    font-size:60px;
+    background: black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+
+
+

@@ -1,0 +1,87 @@
+.TimeTable {
+
+    border-spacing: 10;
+    margin: 1rem;
+    background-color: #FFFFFF;
+    font-size: 3em;
+
+    position: relative;
+    Left: 350px;
+    top: 10;
+
+}
+
+.Header {
+
+    text-align: left;
+
+}
+
+.Base {
+
+    background-color: #3c56e6;
+    border:10px  black;
+    width:fit-content;
+    padding: 2%;
+    border-radius: 25px;
+    padding: 20px;
+    height: 120px;
+
+
+
+
+}
+
+form{
+
+    background-color: #FFFFFF;
+    border:10px  black;
+    width:fit-content;
+    padding: 0.5%;
+    border-radius: 25px;
+    padding: 20px;
+    position: relative;
+    left: 1000px;
+
+
+}
+
+select{
+
+
+    font-size: 50px;
+    border-radius: 25px;
+    border: none;
+
+}
+input {
+
+    font-size: 50px;
+    border: none;
+    background-color: #DDDDDD;
+    border-radius: 25px;
+}
+.history {
+    background-color: #BDBABA;
+    border:10px  black;
+    width:fit-content;
+    padding: 0.5%;
+    border-radius: 25px;
+    padding: 20px;
+    position: relative;
+    left: 1000px;
+
+}
+
+.BaseTwo {
+    background-color:     #FFFFFF;
+    border:10px  black;
+    width:fit-content;
+    padding: 2%;
+    border-radius: 25px;
+    padding: 20px;
+    height: 120px;
+
+
+
+}
