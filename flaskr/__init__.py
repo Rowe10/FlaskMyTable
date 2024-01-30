@@ -36,7 +36,7 @@ def create_app(test_config=None):
 
     #Import Validations
 
-    from . models import LengthCheck
+    from . validations import LengthCheck
 
     #import html variables
 
@@ -86,7 +86,7 @@ def create_app(test_config=None):
             if LengthCheck(nameInput, 30, 3) == True:
                  newName = Personal(name=nameInput)
             else:
-                return "Error Nope"
+                return "Error"
 
 
             newName = Personal(name=nameInput)
