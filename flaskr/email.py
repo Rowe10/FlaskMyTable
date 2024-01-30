@@ -2,12 +2,8 @@ import smtplib
 import ssl
 from email.message import EmailMessage
 
-def sendInvoice():
+def sendInvoice(email_sender, email_password, email_receiver):
     
-
-    email_sender = 'tomrowe76@outlook.com'
-    email_password = 'password123'
-    email_receiver = 'DesignServices@gmail.com'
 
     subject = 'Invoice'
     body = GenerateInvoice()
